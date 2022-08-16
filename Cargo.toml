@@ -1,0 +1,32 @@
+[package]
+name = "chrome_cookies"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+base64 = "0.13.0"
+hex = "0.4.3"
+aes-gcm = "0.10.1"
+serde_json = "1.0"
+rusqlite = { version = "0.28.0",features = ["winsqlite3"]}
+tabled  = "0.8.0"
+
+[dependencies.windows]
+version = "0.39.0"
+features = [
+    "Data_Xml_Dom",
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Security_Cryptography",
+    "Foundation",
+    "Storage_Streams",
+    "Security_Cryptography_DataProtection",
+    "Win32_System_WinRT",
+    "Win32_System_Services",
+    "Win32_System_Memory_NonVolatile",
+]
+
